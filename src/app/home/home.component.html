@@ -1,0 +1,47 @@
+{{a}}<br>
+{{b}}<br>
+{{d}}<br>
+
+<input type="text" id="name"><br> -->
+<input type="button" value="print value from text box" (click)="printdata($event)">
+
+<br>
+constructor : Document.GetElementById text:
+<input type="text" id="doctext"><br>
+<span *ngIf = "status else condition2">this is true</span>
+<ng-template #condition2>this is false</ng-template><br>
+
+{{mobiles[0]}}<br>
+{{mobiles[1]}}<br>
+{{mobiles[2]}}<br>
+
+For loop data:<br>
+<div *ngFor="let mobile of mobiles">{{mobile}}</div>
+<br>
+upper case:{{name1 | uppercase}}
+<br>
+lower case:{{name2 | lowercase}}
+<br>
+Date:{{todaydate}}
+<br>
+short Date:{{todaydate | date:'d/M/y'}}
+<br>
+short Time:{{todaydate | date:"shortTime"}}
+<br>
+currency:{{money | currency:'INR'}}
+<br>
+percent:{{performance | percent}}
+<br>
+<input type="button" value="data" (click) = 'data()'>
+<br>
+
+<input type="button" value="clickuse" (click) = 'getallusers()'>
+<table>
+    <tr *ngFor="let User of User">
+        <td>{{User.id}}</td>
+        <td>{{User.name}}</td>
+        <td>{{User.username}}</td>
+        <td>{{User.email}}</td>
+
+    </tr>
+</table>
